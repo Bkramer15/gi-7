@@ -1,0 +1,567 @@
+body{
+    padding:0;
+    margin-left:2%;
+}
+
+.dark-mode {
+    background-color: red;
+    color: white;
+    /* Add any additional styles for dark mode here */
+        main {
+            transform: translateY(0px) scale(.5); /* Move up by 10px and scale to 110% */
+
+        }
+    }
+
+
+    #hiden{
+        display: none;
+    }
+
+
+    .dark-mode #hiden{
+        display: inline;
+        font-size: 30px;
+        text-align: center;
+    }
+/*code input box and sizing */
+#displaytext{
+    padding: 10px;
+    height: 25px;
+    width: 29.5%;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    width: 30vw;
+    height: 20vh;
+  }
+
+#equal{
+    background-color:#1a73e8;
+    color: white;
+}
+
+
+.calculator{
+    display: block;
+    
+
+}
+
+
+button{
+    border-radius: 7px;
+    background-color: #ccc8c8;
+    border-bottom-color:#202124;
+    border: none;
+}
+
+.keys.hover{
+    background-color: red;
+}
+
+
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#point{
+    background-color: #F2F2F2;
+    font-style: 'TImes New Roman';
+    font-size: 15px;
+}
+
+/*code below responsible for header and items inside */
+
+header{
+    border-bottom: 2px solid black;
+    height: fit-content;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+}
+
+.extra{ 
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    width: 92px;
+    height: 44px;
+}
+
+.extra:hover{
+    background-color: lightblue;
+}
+
+#extrabar{
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+    width: 600px;
+    margin-left: 15%;
+    margin-top:33px;
+    height: 40px;
+}
+
+.topnav{
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.navbar {
+    display: flex;/* Allow the navbar to grow to take up available space */
+    justify-content: flex-start; /* Align items to the end of the flex container */
+    padding: 0; /* Add padding to the navbar */
+    margin-left: 10px;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Product-Sans';
+    color: rgb(84, 83, 83);
+    padding: 5px 10px;
+    margin-left: 10px; /* Add some margin between navbar items */
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    font-size:20px;
+    color: blue;
+}
+
+li a:hover{
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+li a:active{
+    color: rgb(187, 5, 187);
+}
+
+footer{
+    background-color: lightgrey;
+    display: flex;
+    position: fixed;
+    justify-content: flex-start; /* Align items to the end of the flex container */
+    padding: 10px; /* Add padding to the navbar */
+    width:100%;
+    height: 30px;
+    bottom:0;
+    left: 0;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 5px 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+footer nav a:active {
+    color: rgb(187, 5, 187);
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropUpMenu {
+    position: absolute;
+    bottom: 100%; /* Corrected: added 'px' unit */
+    left: 0;
+    background-color: lightblue;
+    width: 200px;
+    z-index: 1;
+    display: none;
+}
+
+.menu-container:hover .dropUpMenu {
+    display: block;
+}
+
+.dropUpMenu li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.dropUpMenu li:active {
+    background-color: lightblue; /* Adjusted background color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queres foor different sizing on different screens 
+
+/* media queries for ipad(tables)*/
+@media(min-width:481px) and (max-width: 768px){
+
+    body{
+        padding:0;
+        margin-left:2%;
+    }
+    
+    #darkmode{
+        background-color: rgb(54, 54, 54);
+        color: white;
+    }
+    
+    /*code input box and sizing */
+    #displaytext{
+        padding: 10px;
+        height: 25px;
+        width: 29.5%;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+    
+    
+    .keys{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        column-gap: 5px;
+        row-gap: 5px;
+        width: 30vw;
+        height: 20vh;
+      }
+    
+    #equal{
+        background-color:#1a73e8;
+        color: white;
+    }
+    
+    
+    .calculator{
+        display: block;
+        
+    
+    }
+    
+    button{
+        border-radius: 7px;
+        background-color: #ccc8c8;
+        border-bottom-color:#202124;
+        border: none;
+    }
+    
+    .keys.hover{
+        background-color: red;
+    }
+    
+    
+    #zero,
+    #one,
+    #two,
+    #three,
+    #four,
+    #five,
+    #six,
+    #seven,
+    #eight,
+    #nine,
+    #point{
+        background-color: #F2F2F2;
+        font-style: 'TImes New Roman';
+        font-size: 15px;
+    }
+    
+    /*code below responsible for header and items inside */
+    
+    header{
+        border-bottom: 2px solid black;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    a{
+        text-decoration: none;
+        color: rgb(70, 69, 69);
+    }
+    
+    .extra{ 
+        border-radius: 20px;
+        border: 1px solid black;
+        background-color: white;
+        width: 92px;
+        height: 44px;
+    }
+    
+    .extra:hover{
+        background-color: lightblue;
+    }
+    
+    #extrabar{
+        border-radius: 20px;
+        border: 1px solid black;
+        text-align: center;
+        width: 600px;
+        margin-left: 15%;
+        margin-top:33px;
+        height: 40px;
+    }
+    
+    .topnav{
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    
+    .navbar {
+        display: flex;/* Allow the navbar to grow to take up available space */
+        justify-content: flex-start; /* Align items to the end of the flex container */
+        padding: 0; /* Add padding to the navbar */
+        margin-left: 10px;
+        
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        font-family: 'Product-Sans';
+        color: rgb(84, 83, 83);
+        padding: 5px 10px;
+        margin-left: 10px; /* Add some margin between navbar items */
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    li a{
+        text-decoration: none;
+        font-size:20px;
+        color: blue;
+    }
+    
+    li a:hover{
+        color: blue;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    
+    li a:active{
+        color: rgb(187, 5, 187);
+    }
+    
+    footer{
+        background-color: lightgrey;
+        display: flex;
+        position: fixed;
+        justify-content: flex-start; /* Align items to the end of the flex container */
+        padding: 10px; /* Add padding to the navbar */
+        width:100%;
+        height: 30px;
+        bottom:0;
+        left: 0;
+    }
+    
+    footer nav a {
+        text-decoration: none;
+        color: rgb(27, 27, 27);
+        padding: 5px 10px;
+    }
+    
+    footer nav a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+    
+    footer nav a:active {
+        color: rgb(187, 5, 187);
+    }
+    
+    .menu-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropUpMenu {
+        position: absolute;
+        bottom: 100%; /* Corrected: added 'px' unit */
+        left: 0;
+        background-color: lightblue;
+        width: 200px;
+        z-index: 1;
+        display: none;
+    }
+    
+    .menu-container:hover .dropUpMenu {
+        display: block;
+    }
+    
+    .dropUpMenu li {
+        list-style-type: none;
+        padding: 10px;
+    }
+    
+    .dropUpMenu li:active {
+        background-color: lightblue; /* Adjusted background color */
+    }
+}
+
+/*media queries for lapotops*/
+@media(min-width: 769px) and (max-width: 1024px){
+
+}
+
+/*media queries fot full computers and up*/
+@media(min-wdith: 1025px) and (max-width: 1200px){
+    body{
+        padding:0;
+        margin-left:2%;
+    }
+    
+    #darkmode{
+        background-color: rgb(54, 54, 54);
+        color: white;
+    }
+    
+    /*code input box and sizing */
+    #displaytext{
+        padding: 10px;
+        height: 25px;
+        width: 29.5%;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+    
+    
+    .keys{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        column-gap: 5px;
+        row-gap: 5px;
+        width: 30vw;
+        height: 20vh;
+      }
+    
+    #equal{
+        background-color:#1a73e8;
+        color: white;
+    }
+    
+    
+    .calculator{
+        display: block;
+        
+    
+    }
+    
+    /*code below responsible for header and items inside */
+    
+    header{
+        border-bottom: 2px solid black;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    a{
+        text-decoration: none;
+        color: rgb(70, 69, 69);
+    }
+    
+    .extra{ 
+        border-radius: 20px;
+        border: 1px solid black;
+        background-color: white;
+        width: 92px;
+        height: 44px;
+    }
+    
+    .extra:hover{
+        background-color: lightblue;
+    }
+    
+    #extrabar{
+        border-radius: 20px;
+        border: 1px solid black;
+        text-align: center;
+        width: 600px;
+        margin-left: 15%;
+        margin-top:33px;
+        height: 40px;
+    }
+    
+    .topnav{
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    
+    .navbar {
+        display: flex;/* Allow the navbar to grow to take up available space */
+        justify-content: flex-start; /* Align items to the end of the flex container */
+        padding: 0; /* Add padding to the navbar */
+        margin-left: 10px;
+        
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        font-family: 'Product-Sans';
+        color: rgb(84, 83, 83);
+        padding: 5px 10px;
+        margin-left: 10px; /* Add some margin between navbar items */
+    }
+    
+    footer{
+        background-color: lightgrey;
+        display: flex;
+        position: fixed;
+        justify-content: flex-start; /* Align items to the end of the flex container */
+        padding: 10px; /* Add padding to the navbar */
+        width:100%;
+        height: 30px;
+        bottom:0;
+        left: 0;
+    }    
+}
