@@ -1,0 +1,1 @@
+This my calcultaor/BMI calculator.I was tasked with creating a calculator so I recreated googles calculator and webpage.When hitting buttons radians and degree youn can alterante between color schemes as well as do other basic and more advanced math calculations.
